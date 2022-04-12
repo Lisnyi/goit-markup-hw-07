@@ -75,26 +75,25 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.logo-half-header {
+.logo--black {
   color: var(--black-color);
 }
-.logo-half-footer {
+.logo--white {
   color: var(--white-color);
 }
 
-.logo.no-margin {
+.footer__logo {
   margin-right: 0;
-}
-.logo.no-padding {
   padding: 0;
 }
+
 
 /* Header */
 
 .header {
   border-bottom: 1px solid #ececec;
 }
-.header-nav {
+.header__conteiner {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -103,17 +102,17 @@ body {
   display: flex;
   align-items: center;
 }
-.nav-list {
+.nav__list {
   display: flex;
 }
-.nav-list .item + .item {
+.nav__list .nav__item + .nav__item {
   margin-left: 50px;
 }
-.nav-list .item {
+.nav__list .nav__item {
   display: block;
   position: relative;
 }
-.nav-link {
+.nav__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 31px;
@@ -125,13 +124,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.contacts-list {
+.contacts {
   display: flex;
 }
-.contacts-list .item + .item {
+.contacts .contacts__item + .contacts__item {
   margin-left: 30px;
 }
-.icon {
+.contacts__icon {
   fill: currentColor;
 }
 .envelope {
@@ -144,7 +143,7 @@ body {
   height: 16px;
   margin-right: 10px;
 }
-.header-contacts {
+.contacts__link {
   padding: 32px 0;
   transition: color var(--transition-duration) var(--transition-timing-function);
 
@@ -155,18 +154,18 @@ body {
   letter-spacing: 0.02em;
 }
 
-.header-contacts:focus,
-.header-contacts:hover,
+.contacts__link:focus,
+.contacts__link:hover,
 .footer-contacts:focus,
 .footer-contacts:hover,
-.nav-link:focus,
-.nav-link:hover {
+.nav__link:focus,
+.nav__link:hover {
   color: var(--accent-text-color);
 }
-.current {
+.nav__link--current {
   color: var(--accent-text-color);
 }
-.current::after {
+.nav__link--current::after {
   content: '';
   display: block;
   position: absolute;
@@ -516,12 +515,12 @@ body {
 
   background-color: var(--hero-bgc);
 }
-.footer .conteiner {
+.footer__conteiner {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
-.address {
+.footer-contacts__address {
   margin-top: 0;
   margin-bottom: 0;
 
@@ -530,16 +529,16 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-.contacts {
+.footer-contacts {
   margin-top: 20px;
 }
-.footer-list {
+.footer-contacts__list {
   margin-top: 9px;
 }
-.footer-list .item + .item {
+.footer-contacts__list .footer-contacts__item + .footer-contacts__item {
   margin-top: 9px;
 }
-.footer-contacts {
+.footer-contacts__link {
   display: block;
   transition: color var(--transition-duration) var(--transition-timing-function);
 
@@ -548,7 +547,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-.footer-title {
+.footer__title {
   margin-top: 0;
   margin-bottom: 20px;
   text-align: left;
@@ -560,21 +559,26 @@ body {
 .social-list {
   display: flex;
 }
-.social-item {
+.social-list__item {
   margin-left: 10px;
 }
-.social-item:first-child {
+.social-list__item:first-child {
   margin-left: 0px;
 }
-.social-list .social-links {
+.social-list__list .social-list__link {
   background-color: var(--footer-social-color);
   color: var(--white-color);
 }
-.social-list .social-links:hover,
-.social-list .social-links:focus {
+.social-list__list .social-list__link:hover,
+.social-list__list .social-list__link:focus {
   background-color: var(--accent-text-color);
 }
-.subscribe-input {
+.social-list__icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+.subscribe__input {
   height: 50px;
   width: 358px;
   margin: 0;
@@ -588,17 +592,17 @@ body {
   background-color: transparent;
   transition: border-color var(--transition-duration) var(--transition-timing-function);
 }
-.subscribe-input:hover,
-.subscribe-input:focus {
+.subscribe__input:hover,
+.subscribe__input:focus {
   border-color: var(--accent-text-color);
 }
-.subscribe-input::placeholder {
+.subscribe__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
 
   color: var(--adress-text-color);
 }
-.subscribe-button {
+.subscribe__button {
   display: inline-flex;
   padding: 10px 0;
   margin-left: 12px;
@@ -618,7 +622,7 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
 }
-.subscribe-icon {
+.subscribe__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
