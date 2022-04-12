@@ -516,9 +516,10 @@ body {
 
   background-color: var(--hero-bgc);
 }
-.footer > .conteiner {
+.footer .conteiner {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .address {
   margin-top: 0;
@@ -547,9 +548,6 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-.footer-social {
-  margin-left: 70px;
-}
 .footer-title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -575,10 +573,6 @@ body {
 .social-list .social-links:hover,
 .social-list .social-links:focus {
   background-color: var(--accent-text-color);
-}
-
-.footer-subscribe {
-  margin-left: 93px;
 }
 .subscribe-input {
   height: 50px;
@@ -734,8 +728,9 @@ body {
 }
 .field-icon {
   position: absolute;
-  top: 11px;
-  left: 12px;
+  top: 50%;
+  left: 12px;  
+  transform: translateY(-50%); 
   width: 18px;
   height: 18px;
   fill: var(--title-text-color);
