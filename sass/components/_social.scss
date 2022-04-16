@@ -1,0 +1,30 @@
+.team-social {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: calc((100% - 30px) / 4);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color $transition-duration $transition-timing-function,
+        background-color $transition-duration $transition-timing-function;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: $clients-logo-color;
+}
+
+.social-icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+}
+
+.social-links:hover,
+.social-links:focus {
+    background-color: $accent-text-color;
+    color: $white-color;
+}

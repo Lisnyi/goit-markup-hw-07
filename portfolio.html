@@ -11,30 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="conteiner header-nav">
+        <div class="conteiner header__conteiner">
             <nav class="nav">
-                <a href="./index.html" class="logo link">Web<span class="logo-half-header">Studio</span></a>
-                <ul class="nav-list list">
-                    <li class="item"><a href="./index.html" class="link nav-link">Студия</a></li>
-                    <li class="item"><a href="./portfolio.html" class="link nav-link current">Портфолио</a></li>
-                    <li class="item"><a href="" class="link nav-link">Контакты</a></li>
+                <a href="./index.html" class="logo link">Web<span class="logo--black">Studio</span></a>
+                <ul class="nav__list list">
+                    <li class="nav__item"><a href="./index.html" class="link nav__link">Студия</a></li>
+                    <li class="nav__item"><a href="./portfolio.html" class="link nav__link nav__link--current">Портфолио</a></li>
+                    <li class="nav__item"><a href="" class="link nav__link">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contacts-list list">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class="header-contacts link">
-                        <svg class="icon envelope">
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="contacts__link link">
+                        <svg class="contacts__icon envelope">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li class="item">
-                    <a href="tel:+380961111111" class="header-contacts link">
-                        <svg class="icon smartphone">
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="contacts__link link">
+                        <svg class="contacts__icon smartphone">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>+38 096 111 11 11
                     </a>
@@ -45,102 +45,102 @@
     <main>
         <section class="section">
             <div class="conteiner">
-                <ul class="list button-list">
-                    <li class="button-item"><button type="button" class="gallery-button current-btn">Все</button></li>
-                    <li class="button-item"><button type="button" class="gallery-button">Веб-сайты</button></li>
-                    <li class="button-item"><button type="button" class="gallery-button">Приложения</button></li>
-                    <li class="button-item"><button type="button" class="gallery-button">Дизайн</button></li>
-                    <li class="button-item"><button type="button" class="gallery-button">Маркетинг</button></li>
+                <ul class="list filters-list">
+                    <li class="filters-list__item"><button type="button" class="filters-list__button filters-list__button--current-btn">Все</button></li>
+                    <li class="filters-list__item"><button type="button" class="filters-list__button">Веб-сайты</button></li>
+                    <li class="filters-list__item"><button type="button" class="filters-list__button">Приложения</button></li>
+                    <li class="filters-list__item"><button type="button" class="filters-list__button">Дизайн</button></li>
+                    <li class="filters-list__item"><button type="button" class="filters-list__button">Маркетинг</button></li>
                 </ul>
-                <ul class="list gallery-list">
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                <ul class="list gallery__list">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img1.jpg" alt="Открытый веб-сайт на ноутбуке" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title">Технокряк</h2>
-                            <p class="gallery-type">Веб-сайт</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title">Технокряк</h2>
+                            <p class="gallery__type">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img2.jpg" alt="Постер к баскетбольному матчу" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                            <p class="gallery-type">Дизайн</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+                            <p class="gallery__type">Дизайн</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img3.jpg" alt="Логотип ресторана" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title">Ресторан <span lang="en">Seafood</span></h2>
-                            <p class="gallery-type">Приложение</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title">Ресторан <span lang="en">Seafood</span></h2>
+                            <p class="gallery__type">Приложение</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img4.jpg" alt="Наушники" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title">Проект <span lang="en">Prime</span></h2>
-                            <p class="gallery-type">Маркетинг</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title">Проект <span lang="en">Prime</span></h2>
+                            <p class="gallery__type">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img5.jpg" alt="Две коробки" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title">Проект <span lang="en">Boxes</span></h2>
-                            <p class="gallery-type">Приложение</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title">Проект <span lang="en">Boxes</span></h2>
+                            <p class="gallery__type">Приложение</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img6.jpg" alt="Открытый веб-сайт на мониторе" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title" lang="en">Inspiration has no Borders</h2>
-                            <p class="gallery-type">Веб-сайт</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title" lang="en">Inspiration has no Borders</h2>
+                            <p class="gallery__type">Веб-сайт</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img7.jpg" alt="Открытая книга" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title">Издание <span lang="en">Limited Edition</span></h2>
-                            <p class="gallery-type">Дизайн</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title">Издание <span lang="en">Limited Edition</span></h2>
+                            <p class="gallery__type">Дизайн</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img8.jpg" alt="Ярлык с текстом" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title">Проект <span lang="en">LAB</span></h2>
-                            <p class="gallery-type">Маркетинг</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title">Проект <span lang="en">LAB</span></h2>
+                            <p class="gallery__type">Маркетинг</p>
                         </div>
                     </li>
-                    <li class="gallery-item">
-                        <div class="gallery-thumb">
+                    <li class="gallery__item">
+                        <div class="gallery__thumb">
                             <img src="./images/portfolio/img9.jpg" alt="Работа в приложении за ноутбуком" width="370" class="img-nogap">
-                            <p class="gallery-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            <p class="gallery__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                         </div>                        
-                        <div class="item-description">
-                            <h2 class="gallery-title" lang="en">Growing Business</h2>
-                            <p class="gallery-type">Приложение</p>
+                        <div class="gallery__description">
+                            <h2 class="gallery__title" lang="en">Growing Business</h2>
+                            <p class="gallery__type">Приложение</p>
                         </div>
                     </li>
                 </ul>
@@ -148,49 +148,48 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="conteiner">
+        <div class="conteiner footer__conteiner">
             <div>
-                <a href="./index.html" class="logo no-margin no-padding link">Web<span
-                        class="logo-half-footer">Studio</span></a>
-                <address class="contacts">
-                    <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-                    <ul class="footer-list list">
-                        <li class="item">
-                            <a href="mailto:info@devstudio.com" class="link footer-contacts">info@devstudio.com</a>
+                <a href="./index.html" class="logo footer__logo link">Web<span class="logo--white">Studio</span></a>
+                <address class="footer-contacts">
+                    <p class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul class="footer-contacts__list list">
+                        <li class="footer-contacts__item">
+                            <a href="mailto:info@devstudio.com" class="link footer-contacts__link">info@devstudio.com</a>
                         </li>
-                        <li class="item">
-                            <a href="tel:+380961111111" class="link footer-contacts">+38 096 111 11 11</a>
+                        <li class="footer-contacts__item">
+                            <a href="tel:+380961111111" class="link footer-contacts__link">+38 096 111 11 11</a>
                         </li>
                     </ul>
                 </address>
             </div>
             <div>
-                <h3 class="footer-title">присоединяйтесь</h3>
+                <h3 class="footer__title">присоединяйтесь</h3>
                 <ul class="list social-list">
-                    <li class="social-item">
-                        <a href="" class="link social-links" aria-label="Instagram">
-                            <svg class="social-icon">
+                    <li class="social-list__item">
+                        <a href="" class="link social-list__link" aria-label="Instagram">
+                            <svg class="social-list__icon">
                                 <use href="./images/icons.svg#instagram"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="" class="link social-links" aria-label="Twitter">
-                            <svg class="social-icon">
+                    <li class="social-list__item">
+                        <a href="" class="link social-list__link" aria-label="Twitter">
+                            <svg class="social-list__icon">
                                 <use href="./images/icons.svg#twitter"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="" class="link social-links" aria-label="Facebook">
-                            <svg class="social-icon">
+                    <li class="social-list__item">
+                        <a href="" class="link social-list__link" aria-label="Facebook">
+                            <svg class="social-list__icon">
                                 <use href="./images/icons.svg#facebook"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="social-item">
-                        <a href="" class="link social-links" aria-label="Linkedin">
-                            <svg class="social-icon">
+                    <li class="social-list__item">
+                        <a href="" class="link social-list__link" aria-label="Linkedin">
+                            <svg class="social-list__icon">
                                 <use href="./images/icons.svg#linkedin"></use>
                             </svg>
                         </a>
@@ -198,10 +197,12 @@
                 </ul>
             </div>
             <div>
-                <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                <h3 class="footer__title">Подпишитесь на рассылку</h3>
                 <form>
-                    <input type="email" name="email" placeholder="E-mail" class="subscribe-input">
-                    <button type="submit" class="subscribe-button">Подписаться <svg class="subscribe-icon"><use href="./images/icons.svg#send"></use></svg></button>
+                    <input type="email" name="email" placeholder="E-mail" class="subscribe__input">
+                    <button type="submit" class="subscribe__button">Подписаться <svg class="subscribe__icon">
+                            <use href="./images/icons.svg#send"></use>
+                        </svg></button>
                 </form>
             </div>
         </div>

@@ -1,5 +1,14 @@
 @import "./utils/variables";
-@import "./utils/base";
+@import "./base/common";
 @import "./components/header";
 @import "./components/logo";
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/features";
+@import "./components/works";
+@import "./components/team";
+@import "./components/social";
+@import "./components/clients";
+@import "./components/filters-list";
+@import "./components/gallery";
 @import "./components/footer";
