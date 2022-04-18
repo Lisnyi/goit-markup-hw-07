@@ -15,16 +15,16 @@
     height: 44px;
     border-radius: 50%;
     color: $clients-logo-color;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-text-color;
+        color: $white-color;
+}
 }
 
 .social-icon {
     fill: currentColor;
     width: 20px;
     height: 20px;
-}
-
-.social-links:hover,
-.social-links:focus {
-    background-color: $accent-text-color;
-    color: $white-color;
 }
