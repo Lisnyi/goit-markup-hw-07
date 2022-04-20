@@ -28,8 +28,7 @@
 
 .nav__link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 31px;
+    padding: 32px 0;
     transition: color $transition-duration $transition-timing-function;
 
     color: $title-text-color;
@@ -66,10 +65,28 @@
 
 .contacts__item {
     display: block;
-    position: relative;
 
     & + & {
         margin-left: 30px;
+    }
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    transition: color $transition-duration $transition-timing-function;
+
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    &:focus,
+    &:hover,
+        {
+        color: $accent-text-color;
     }
 }
 
@@ -87,21 +104,4 @@
     width: 10px;
     height: 16px;
     margin-right: 10px;
-}
-
-.contacts__link {
-    padding: 32px 0;
-    transition: color $transition-duration $transition-timing-function;
-
-    color: $primary-text-color;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    &:focus,
-    &:hover,
-        {
-        color: $accent-text-color;
-    }
 }
