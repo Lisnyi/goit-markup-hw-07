@@ -1,7 +1,13 @@
 .team-social {
     display: flex;
-    justify-content: space-between;
-    flex-basis: calc((100% - 30px) / 4);
+}
+
+.team-socail__item{
+    margin-left: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
 .social-links {

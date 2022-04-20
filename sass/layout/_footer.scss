@@ -8,7 +8,6 @@
 .footer__conteiner {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
 }
 
 .footer__title {
@@ -60,6 +59,10 @@
     }
 }
 
+.footer__social{
+    margin-left: 79px;
+}
+
 .social-list {
     display: flex;
 }
@@ -94,6 +97,10 @@
     fill: currentColor;
     width: 20px;
     height: 20px;
+}
+
+.footer__subscribe {
+    margin-left: 93px;
 }
 
 .subscribe__input {
