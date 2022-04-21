@@ -386,7 +386,7 @@
             </div>
             <div class="footer__subscribe">
                 <p class="footer__title">Подпишитесь на рассылку</p>
-                <form>
+                <form class="subscribe__form">
                     <input type="email" name="email" placeholder="E-mail" class="subscribe__input">
                     <button type="submit" class="subscribe__button">Подписаться <svg class="subscribe__icon">
                             <use href="./images/icons.svg#send"></use>
@@ -402,28 +402,34 @@
             <form class="modal__form">
                 <label class="modal__field">
                     <span class="modal__lable">Имя</span>
-                    <svg class="modal__field-icon">
-                        <use href="./images/icons.svg#person"></use>
-                    </svg>
-                    <input type="text" name="user-name" class="modal__input">
+                    <span class="modal__field-box">
+                        <input type="text" name="user-name" class="modal__input">
+                        <svg class="modal__field-icon">
+                            <use href="./images/icons.svg#person"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="modal__field">
                     <span class="modal__lable">Телефон</span>
-                    <svg class="modal__field-icon">
-                        <use href="./images/icons.svg#phone"></use>
-                    </svg>
-                    <input type="tel" name="tel" class="modal__input">
+                    <span class="modal__field-box">
+                        <input type="tel" name="tel" class="modal__input">
+                        <svg class="modal__field-icon">
+                            <use href="./images/icons.svg#phone"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="modal__field">
                     <span class="modal__lable">Почта</span>
-                    <svg class="modal__field-icon">
-                        <use href="./images/icons.svg#email"></use>
-                    </svg>
-                    <input type="email" name="email" class="modal__input">
+                    <span class="modal__field-box">
+                        <input type="email" name="email" class="modal__input">
+                        <svg class="modal__field-icon">
+                            <use href="./images/icons.svg#email"></use>
+                        </svg>
+                    </span>
                 </label>
                 <label class="modal__field">
                     <span class="modal__lable">Комментарий</span>
-                    <textarea name="comment" id="comment" placeholder="Введите текст" class="modal__comment"></textarea>
+                    <textarea name="comment" placeholder="Введите текст" class="modal__comment"></textarea>
                 </label>
                 <label class="modal__label-check">
                     <input type="checkbox" name="check" class="modal__check visually-hidden" required>
