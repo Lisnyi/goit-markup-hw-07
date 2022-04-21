@@ -74,13 +74,14 @@
 .modal__form {
     display: flex;
     flex-direction: column;
+    margin-top: 15px;
 }
 
 .modal__field {
     margin-top: 10px;
     
     &:first-child {
-        margin-top: 15px;
+        margin-top: 0px;
     }
 }
 

@@ -160,6 +160,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 15px;
 }
 
 .modal__field {
@@ -167,7 +168,7 @@ body {
 }
 
 .modal__field:first-child {
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 .modal__lable {
